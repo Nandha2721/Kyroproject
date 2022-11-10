@@ -1,0 +1,22 @@
+{
+  "User": [
+    {
+      "Name": "Adam Levine",
+      "email": "adamlevine@kyro.us",
+      "image":"",
+      "id":1
+    }
+  ],
+  "Profile": [
+    {
+    "displayName":  "Nandha",
+    "email": "nandha@kyro.us",
+    "firstName": "Nandha Kumar",
+    "lastName" : "V",
+    "location":  "Chennai",
+    "phone1": "3444334343",
+    "phone2": "9894884774",
+    "id":1
+    }
+  ]
+}

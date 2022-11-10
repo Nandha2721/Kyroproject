@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "firstName": "Monisha",
+    "lastName": "Nandha",
+    "displayName": "Monisha",
+    "email": "monisha@kyro.us",
+    "phone1": "9897867564",
+    "phone2": "7867564754",
+    "location": "Chennai"
+  }
+}

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import UserCreation from "./components/usercreations";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import ProjectCreation from "./components/projectcreation";
+import TaskCreation from "./components/taskcreation";
+import Login from "./components/login";
+import ProjectList from "./components/projectlist";
+import TaskList from "./components/tasklist";
+import Welcome from "./components/welcome";
+import FactList from "./components/FactList";
+
+class App extends Component {
+
+    render() {
+        return (
+            <div className="App">
+                <Router>
+                    <Switch>
+                       <Route exact path='/login' component={Login} />
+                        <Route exact path='/usercreate' component={UserCreation} />
+                        <Route exact path='/projectcreate' component={ProjectCreation} />
+                        <Route exact path='/taskcreate/:id' component={TaskCreation} />
+                        <Route exact path='/projectlist' component={ProjectList} />
+                        <Route exact path='/tasklist/:id' component={TaskList} />
+                        <Route exact path='/welcome' component={Welcome} />
+                        <Route exact path='/factList' component={FactList} />
+                    </Switch>
+                </Router>
+            </div>
+        );
+    }
 }
 
 export default App;
